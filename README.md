@@ -1,11 +1,11 @@
-Ejemplo con Node.js, Express, Mongoose y TypeScript para explicar el Hashing de contraseñas con bcrypt
+# Ejemplo con Node.js, Express, Mongoose y TypeScript para explicar el Hashing de contraseñas con bcrypt
 
 La idea es que en vez de guardar la contraseña en texto plano, se guarde un hash de la contraseña. Este hash es la contraseña procesada con una serie de pases y operaciones logicas para convertir la contraseña en un codigo extraño.
 Para verificar si la contraseña es correcta, se compara el hash con la contraseña ingresada, es decir, se vuelve a procesar la contraseña y se compara si el resultado que da es el mismo que el extraño codigo que tenemos guardado.
 
 Este procesado de la contraseña se hace usando unas cadenas de 128 bits conocidas como salt. Esta se almacena dentro del mismo string de texto que el hash final.
 
-Anatomía del string de Bcrypt
+# Anatomía del string de Bcrypt
 
 Tomemos este ejemplo de hash: $2b$12$G17p6M2vK9v.2L3R4S5T6uV7wX8yY9zZ0aB1cD2eF3gH4iJ5kL6m.
 
@@ -27,7 +27,8 @@ Para cada intento de adivinanza, el ladrón tiene que gastar el mismo tiempo de 
 
 Resumen: Procesamos la contraseña gastando energia para hacer mas dificil un ataque de fuerza bruta.
 
-Estructura de la aplicacion:
+# Estructura de la aplicacion:
+
 ExpressMongo/
 
 ├── .env //Aqui ponemos la url de mongo y puerto de la aplicacion
