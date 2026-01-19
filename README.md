@@ -29,23 +29,41 @@ Resumen: Procesamos la contraseña gastando energia para hacer mas dificil un at
 
 Estructura de la aplicacion:
 ExpressMongo/
+
 ├── .env //Aqui ponemos la url de mongo y puerto de la aplicacion
+
 ├── package.json //Aqui ponemos las dependencias
+
 ├── tsconfig.json //Aqui ponemos la configuracion de typescript
+
 ├── src/
+
 │   ├── server.ts //Para ir lanzando el servidor
+
 │   ├── types/
+
 │   │   └── usuario.types.ts //Tipos de datos
+
 │   ├── config/
+
 │   │   └── database.ts //Conectarse a MongoDB
+
 │   ├── models/
+
 │   │   └── Usuario.ts //Modelo de usuario utilizado
+
 │   ├── routes/
+
 │   │   └── usuarios.routes.ts //Donde ocurren los Get, Post...
+
 │   ├── data/
+
 │   │   └── usuarios-seed.ts //Para insertar datos
+
 │   └── scripts/
+
 │       └── seedUsuarios.ts //Para probar como funciona el hashing
+
 └── dist/ (se genera automáticamente al compilar)
 
 Herramientas utilizadas:
